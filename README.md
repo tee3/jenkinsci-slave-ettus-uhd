@@ -1,10 +1,10 @@
-# Jenkins CI JNLP Slave with Boost C++ Libraries
+# Jenkins CI JNLP Slave with Ettus UHD
 
 ## Overview
 
 This repository contains a Dockerfile to build a docker image suitable
-for use as a Jenkins JNLP slave for testing C++ code that depends only
-on the Boost C++ Libraries.
+for use as a Jenkins JNLP slave for testing projects that depend the
+Ettus UHD.
 
 ## Development
 
@@ -14,20 +14,20 @@ https://hub.docker.com.
 ## Building
 
 ``` shell
-docker build -t tee3/jenkinsci-jnlp-slave-boostcpp .
+docker build -t tee3/jenkinsci-jnlp-slave-ettus-uhd .
 ```
 
 ## Distribution
 
 ``` shell
 docker login -u tee3 hub.docker.com
-docker tag tee3/jenkinsci-jnlp-slave-boostcpp tee3/jenkinsci-jnlp-slave-boostcpp:<TAG>
-docker push tee3/jenkinsci-jnlp-slave-boostcpp:<TAG>
+docker tag tee3/jenkinsci-jnlp-slave-ettus-uhd tee3/jenkinsci-jnlp-slave-ettus-uhd:<TAG>
+docker push tee3/jenkinsci-jnlp-slave-ettus-uhd:<TAG>
 docker logout hub.docker.com
 ```
 
 ## Usage
 
 ``` shell
-docker pull hub.docker.com/tee3/jenkinsci-jnlp-slave-boostcpp:<TAG>
+docker pull hub.docker.com/tee3/jenkinsci-jnlp-slave-ettus-uhd:<TAG>
 ```
