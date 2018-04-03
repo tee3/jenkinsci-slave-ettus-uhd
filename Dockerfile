@@ -1,4 +1,4 @@
-FROM tee3/jenkinsci-jnlp-slave-boostcpp:0.0.1
+FROM tee3/jenkinsci-jnlp-slave-boostcpp:0.1.0
 
 LABEL maintainer="Thomas Brown <tabsoftwareconsulting@gmail.com>"
 
