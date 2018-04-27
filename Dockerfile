@@ -44,7 +44,7 @@ RUN git clone --branch v3.11.0.0 https://github.com/ettusresearch/uhd /tmp/uhd &
         /tmp/uhd/host && \
     cmake --build . && \
     cmake --build . --target install && \
-    ldconfig /usr/local/lib && \
+    ldconfig /usr/local/lib64 && \
     cd / && \
     rm -rf /tmp/uhd && \
     pip uninstall -y mako && \
