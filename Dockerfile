@@ -43,4 +43,6 @@ RUN git clone --branch v3.11.0.0 https://github.com/ettusresearch/uhd /tmp/uhd &
     pip uninstall -y mako && \
     pip uninstall -y requests
 
+ENV PKG_CONFIG_PATH /usr/local/lib64/pkgconfig:"${PKG_CONFIG_PATH}"
+
 USER jenkins
