@@ -1,4 +1,4 @@
-FROM tee3/jenkinsci-slave-eigen:0.0.1
+FROM tee3/fedora-27-boost-cplusplus-eigen:0.0.1
 
 LABEL maintainer="Thomas Brown <tabsoftwareconsulting@gmail.com>"
 
